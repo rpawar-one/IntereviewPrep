@@ -4,7 +4,7 @@ import java.util.Arrays;
 public class DSA {
 
 	public static void main(String[] args) {
-		System.out.println("W");
+		System.out.println("Win");
 		int[] arr = {4,2,3,7,6,5};
 		int[] arr2 = {7,7,7,7,7};
 		System.out.println("Input array; non-similar items "+Arrays.toString(arr));
@@ -21,7 +21,10 @@ public class DSA {
 		System.out.println("Second largest by Naive method is: "+ sl.secondLargestNaive());
 		SecondLargestNaive sl2 = new SecondLargestNaive(arr2);
 		System.out.println("Second largest by Naive method with similar array elements is: "+ sl2.secondLargestNaive());
-
+		SecondLargestEfficient sle = new SecondLargestEfficient(arr);
+		System.out.println("Second largest by Efficient method with non-similar array elements is: "+sle.getSecondLargest());
+		SecondLargestEfficient sle_2 = new SecondLargestEfficient(arr2);
+		System.out.println("Second largest by Efficient method with similar array elements is: "+sle_2.getSecondLargest());
 	}
 
 }
