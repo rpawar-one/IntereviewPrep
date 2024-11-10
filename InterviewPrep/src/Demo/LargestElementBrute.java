@@ -17,9 +17,9 @@ public class LargestElementBrute {
 					break;
 					
 				}
-				return element;
-				
+								
 			}
+			return element;
 		}
 		return -1;
 	}
