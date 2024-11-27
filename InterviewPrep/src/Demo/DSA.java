@@ -54,7 +54,43 @@ public class DSA {
 		int[] arr9= {1,2,3,4,5,6};
 		LeftRotateByOne lr1 = new LeftRotateByOne(arr9);
 		System.out.println("The array "+Arrays.toString(arr9)+" After rotating left by one place is "+Arrays.toString(lr1.leftRotateOne()));
-
+		int[] arr10= {1,2,3,4,5};
+		LeftRotateByNumber lrn= new LeftRotateByNumber(arr10);
+		System.out.println("The array "+Arrays.toString(arr10)+" After rotating lect by two places is"+Arrays.toString(lrn.LeftRotateByNumberForLoop(2)));
+		System.out.println("The array post rotation by 2 "+Arrays.toString(arr10));
+		int[] arr11= {4,5,6,10,8,7,3};
+		LeadersInArray lr=new LeadersInArray(arr11);
+		System.out.println("The array "+ Arrays.toString(arr11)+" the leaders: "+ Arrays.toString(lr.findLeaders()));
+		int[] arr12= {2,3,10,6,4,8,1};
+		MaxDiffNaive mdn=new MaxDiffNaive(arr12);
+		System.out.println("The array "+ Arrays.toString(arr12)+" has max difference of "+mdn.maxDifferenceNaive());
+		int[] arr13= {2,3,10,6,4,8,1};
+		MaxDiffLinear mdl = new MaxDiffLinear(arr13);
+		System.out.println("The array "+Arrays.toString(arr13)+" has the max difference of "+mdl.maxDiffLinear()+"; calculated using linear time");
+		int[] arr14= {10,10,20,20,30,30,30,40,50,50,60};
+		SortedFrequency sf=new SortedFrequency(arr14);
+		System.out.println("The frequency of elements in "+Arrays.toString(arr14)+" is");
+		sf.frequencyCalc();
+		int[] arr15= {1,0,1,1,0,0,1,1,1,0,1,0,1,1};
+		MaxConsecutiveOnes mco = new MaxConsecutiveOnes(arr15);
+		System.out.println("For array "+Arrays.toString(arr15)+"; total sets of ones are: "+mco.maxOnes());
+		MaxOnesBinaryArray moba = new MaxOnesBinaryArray(arr15);
+		System.out.println("For array "+Arrays.toString(arr15)+"; max consecutive ones are: "+moba.MaxNumberOfOnes());
+		int[] arr16 = {-3,8,-2,4,-5,7};
+		MaxSumSubarray mss = new MaxSumSubarray(arr16);
+		System.out.println("The max sum of "+Arrays.toString(arr16)+" is: "+mss.maxSumOfSubarray());
+		//int[] arr17 =  {10,12,14,7,8};
+		int[] arr17 =  {10,12,14,7,8,12,6,5,4,3,2,1,7,9,11,13};
+		MaxLengthEvenOddSubarray mleos = new MaxLengthEvenOddSubarray(arr17);
+		System.out.println("The Array "+Arrays.toString(arr17)+" has a maximum even-odd subarray of length "+mleos.MaxEvenOddLength());
+		MaxLengthEvenOddLinear mleol = new MaxLengthEvenOddLinear(arr17);
+		System.out.println("The Array "+Arrays.toString(arr17)+" has a maximum even-odd subarray of length calculated in linear time "+mleol.maxLengthEvenOddLinear());
+		int[] arr18 = {5,2,-3,4};
+		MaxSumCircularSubarray mscs = new MaxSumCircularSubarray(arr18);
+		System.out.println("The maximum subarray in circular calculation for array "+Arrays.toString(arr18)+" is "+mscs.maxSumCircularBrute());
+		MaxSubarrayCircularSumKadane mscsk = new MaxSubarrayCircularSumKadane(arr18);
+		System.out.println("The maximum subarray in circular calculation for array using Kadane's algo is "+Arrays.toString(arr18)+" is "+mscsk.maxCircularSubarraySumKadane());
+		
 	}	
 
 }
